@@ -1,3 +1,3 @@
-From openjdk:8
-copy ./target/employee-jdbc-0.0.1-SNAPSHOT.jar employee-jdbc-0.0.1-SNAPSHOT.jar
-CMD ["java","-jar","employee-jdbc-0.0.1-SNAPSHOT.jar"]
+From openjdk:11
+copy ./target/employee-boot-1.0.jar employee-boot-1.0.jar
+CMD ["java","-jar","employee-boot-1.0.jar"]
