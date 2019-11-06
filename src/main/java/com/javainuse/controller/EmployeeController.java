@@ -23,10 +23,20 @@ public class EmployeeController {
 		return empService.getAllEmployees();
 
 	}
+
+	@RequestMapping(value = "/employeestest", method = RequestMethod.GET)
+	public String getEmployee() {
+
+		return "Hello Employees from DOCKER!!";
+
+	}
+
 	
 	@RequestMapping(value = "/insertemployee", method = RequestMethod.POST)
 	public void insertEmployee(@RequestBody Employee employee) {
 		empService.insertEmployee(employee);
 	}
+	
+	
 
 }
