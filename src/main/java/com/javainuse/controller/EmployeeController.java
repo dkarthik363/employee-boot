@@ -19,14 +19,14 @@ public class EmployeeController {
 
 	@RequestMapping(value = "/employees", method = RequestMethod.GET)
 	public List<Employee> getEmployees() {
-
+		System.out.println("in getEmployees()");
 		return empService.getAllEmployees();
 
 	}
 
 	@RequestMapping(value = "/employeestest", method = RequestMethod.GET)
 	public String getEmployee() {
-
+		System.out.println("in getEmployee(test)");
 		return "Hello Employees from DOCKER!!";
 
 	}
